@@ -9,6 +9,8 @@
 }
 
 button {
+
+  
   border-radius: 8px;
   border: none;
   background-color: #2563eb;
@@ -16,4 +18,9 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition: .3s ease-in-out
+  /* Transition added to slow expansion of icon   */
+}
+button:hover {
+  transform: scale(1.5);
 }

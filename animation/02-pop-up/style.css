@@ -26,23 +26,26 @@ button {
   font-weight: 600;
 }
 
+/* BEFORE Button is activated */
 .popup-modal {
   padding: 32px 64px;
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transform: translate(-50%, -100%);
+  /* Transform starting point. Negative is positive y axis */
 }
 
 .popup-modal p {
   margin-bottom: 24px;
+  
 }
 
 .backdrop {
@@ -53,11 +56,18 @@ button {
   opacity: 0%;
 }
 
+/* AFTER button is activated. */
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  
+  transition: transform 0.5s ease-in-out, opacity 0.4s ease; 
+  transform: translate(-50%,35%); 
+  /* Transform ending point */
+ 
+  
 }
 
-.backdrop.show {
+.backdrop.show {  
   opacity: 30%;
 }
