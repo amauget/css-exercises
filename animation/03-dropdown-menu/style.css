@@ -1,3 +1,4 @@
+/* This applies to everything nested underneath */
 .dropdown-container {
   max-width: 250px;
   margin: 40px auto;
@@ -8,25 +9,45 @@
   cursor: pointer;
 }
 
+/* Menu Icon */
 .menu-title {
   background-color: rgb(163, 162, 162);
 }
-
+/* List items that expand downward. Prior to acitivation? */
 .dropdown-menu {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
   display: none;
+  transform-origin: left top;
+  transition-duration: 500ms;
+  transition-timing-function:ease-in-out;
+  
+
 }
 
+/* Enables color change from mouse hover */
 ul.dropdown-menu li:hover {
   background: rgb(47, 46, 46);
 }
 
+/* Enables dropdown Via JS command. Traits go HERE */
 .visible {
   display: block;
+  animation: expand 500ms ease-in-out;
+  transform-origin: top;
 }
+ @keyframes expand { 
+  0% {
+    transform: scaleY(0);
+  }
 
-
+  70% {
+    transform: scaleY(1.1);
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+}
