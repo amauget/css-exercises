@@ -1,0 +1,22 @@
+.container{
+    background: white;
+}
+.one, .three, .five{
+    background: salmon;
+}
+#two{
+    color: blue;
+    font-size: xx-large;
+}
+.three{
+   font-size:x-large
+}
+#four{
+    background: lightgreen;
+    font-weight: bold;
+    font-size: large
+}
+
+.five{
+
+}
