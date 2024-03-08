@@ -6,7 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+/* justify-content property defines how the browser 
+  distributes space between and around content items along
+ the main-axis of a flex container, and the inline axis of a 
+ grid container.
 
+ */
 }
 
 .box {
@@ -18,10 +23,5 @@
   height: 80px;
   top: 50%;
   left: 50%;
-  /* margin-left = (.container_width - .box_width)/2
-     margin-left = (400-80) / 2 = 160
-     
-     margin-height = (300-80)/2 = 120*/
-  /* margin-left: 160px;
-  /* margin-top: 120px; */
+
 }

@@ -1,8 +1,20 @@
-.header  {
+.header{
   font-family: monospace;
   background: papayawhip;
+  padding: 8px; 
+  display: flex;
+  align-items: center;
+  /* Aligns text to center of flex axis */
+  justify-content: space-between;
+  /* Adds spacing to different class components. left-link, header, etc */
+  
 }
-
+.header .left-links ul{
+  display: flex;
+  list-style: none;
+  padding-left: 12px;
+  padding-top: 4px
+}
 .logo {
   font-size: 48px;
   font-weight: 900;
@@ -14,6 +26,15 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* flex axis is x by default */
+  display: flex;
+  
+  margin: 0;
+  /* Padding orients to edge when set to 0 */
+  padding: 0;
+  /* gap betwen ul components */
+  gap: 8px;
+  
 }
 
 a {
