@@ -1,16 +1,66 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  
 }
-
-img {
-  width: 100px;
-  height: 100px;
-}
-
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  padding-bottom: 32px;
 }
+
+/* Non title content */
+.content{
+  display: flex;
+  gap: 52px;
+  align-content: center;
+  
+}
+
+/* img and .text nesting */
+.plant{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  
+  }
+.plant img {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  /* .plant is column for img and .text
+  centering requires auto margin for zoom function */
+  margin: auto;
+ 
+}
+
+
+
+
+.plant .text{
+  text-wrap: wrap; 
+  padding: 10px;
+  /* Padding allows top line of text to have a fixed distance from img */
+  text-align: center;
+  font-weight: 100;
+ 
+
+}
+
+
+
+
+/* ### Self Check
+
+- All items are centered on the page (horizontally, not vertically).
+- The title is centered on the page. DONE
+- There is 32px between the title and the 'items.' DONE
+- There is 52px between each item. DONE
+- The items are arranged horizontally on the page. DONE
+- The items are only 200px wide and the text wraps. DONE
+- The item text is centered. DONE */
 
 /* do not edit this footer */
 .footer {
@@ -24,3 +74,4 @@ img {
   justify-content: center;
   background: #eee;
 }
+
