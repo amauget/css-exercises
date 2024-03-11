@@ -1,27 +1,17 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  display:flex;
-  flex-direction:column;
   margin: 0;
   min-height: 100vh;
-  
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
-  
 }
-.body-wrapper{
-  display:flex;
-  flex:1;
-/* assigns flex box to everything except header/footer   */
-  
-}
+
 .footer {
   height: 72px;
- 
   background: #eee;
   color: darkmagenta;
 }
