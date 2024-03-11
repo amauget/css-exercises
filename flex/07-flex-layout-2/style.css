@@ -5,35 +5,104 @@ body {
   margin: 0;
   min-height: 100vh;
   
+  
 }
 
 .header {
+  display:flex;
   height: 72px;
   background: darkmagenta;
   color: white;
-  
+  font-size: 32px;
+  font-weight: 900;
+  align-items: center;
+  padding-left:16px;
 }
 .body-wrapper{
   display:flex;
   flex:1;
-/* assigns flex box to everything except header/footer   */
-  
+  /* assigns flex box to everything except header/footer   */
 }
+
+
+
 .footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   height: 72px;
- 
   background: #eee;
   color: darkmagenta;
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
+  /* MUST be set to min-width to avoid shrinkage. */
   background: royalblue;
   box-sizing: border-box;
+  display:flex;
+  flex-direction:column;
+  padding:16px;
+  text-align: left;  
+  
+  
 }
+ul{
+  list-style: none;
+  /* removes bullets */
+  margin: 0;
+  padding:0;
+  /* brings ul cluster to the edge */
+  display:flex;
+  flex-direction: column;
+  gap: 16px;
+  /* These three space out links */
+}
+a{
+  text-decoration: none;
+  /* removes underline */
+  font-size: 24px;
+  color:white;
+  
 
+  
+}
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  padding: 32px;
+  
+ 
 }
+.content{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin: 30px;
+
+}
+/* ### Self Check
+- The header text is size 32px and weight 900.
+DONE
+- The header text is vertically centered and 16px from the edge of the screen.
+DONE
+- The footer is pushed to the bottom of the screen 
+(the footer may go _below_ the bottom of the screen if the content of the 'cards'
+ section overflows and/or if your screen is shorter).
+ DONE
+- The footer text is centered horizontally and vertically.
+DONE
+- The sidebar and cards take up all available space above the footer.
+DONE
+- The sidebar is 300px wide (and it doesn't shrink).
+DONE
+- The sidebar links are size 24px, are white, and do not have the underline text decoration.
+DONE
+- The sidebar has 16px padding.
+DONE
+- There is 32px padding around the 'cards' section.
+DONE
+- The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.
+ */
