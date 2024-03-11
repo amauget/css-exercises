@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -25,3 +25,52 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+/* MY ADDITIONS- BELOW THIS LINE: */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+ 
+
+  
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: rgb(173, 173, 173);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 60px;
+}
+.left-links{
+  display:flex;
+  justify-content: left;
+  gap: 30px;
+  list-style: none;
+  text-decoration: none;
+  
+  
+}
+.right-links{
+  display:flex;
+  justify-content: right;
+
+  gap: 30px;
+  list-style: none;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Element association:
+.header- .left-links & .right-links
+
+.content - img & search bar
+
+.buttons - "Do the thing!" & "Do the other thing!"
+
+.footer - left-links & right-links
+*/
